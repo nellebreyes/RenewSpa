@@ -1,0 +1,189 @@
+/*css reset*/
+html,body{
+  font-size: 62.5%; 
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+}
+
+/*nav*/
+.menuBars{
+    width: 2rem;
+    height:2rem;
+    background: transparent;
+    margin-top: 1.9rem;
+    cursor: pointer;
+    transition: all 5s linear;
+}
+
+
+
+.line{
+    width: 2rem;
+    height: .3rem;
+    background: rgba(255, 254, 254,.8);
+    margin:3px;
+    display: block;
+    margin: .3rem auto;
+}
+
+.line1{
+    width: 1.5rem;
+
+}
+
+.line3{
+    width: 1.5rem;
+}
+
+.menuBars:hover .line1{
+    width: 2rem;
+    background: linear-gradient(50deg, rgba(248, 240, 240, 0.5),rgba(255, 254, 254,.8),rgba(248, 240, 240, 0.5));
+}
+
+.menuBars:hover .line2{
+    background: linear-gradient(50deg, rgba(248, 240, 240, 0.5),rgba(255, 254, 254,.8),rgba(248, 240, 240, 0.5));
+}
+
+.menuBars:hover .line3{
+    width: 2rem;
+    background: linear-gradient(50deg, rgba(248, 240, 240, 0.5),rgba(255, 254, 254,.8),rgba(248, 240, 240, 0.5));
+}
+.nav{
+    background: linear-gradient(-45deg, rgba(223, 218, 218, 0.5),rgba(192, 185, 185, 0.2));
+    position:fixed;
+    height: 100vh;
+    width:6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10rem;
+}
+.socialIcons i.fa-brands{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+
+}
+
+.socialIcons i.fa-brands:hover{
+    color:rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+.year{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/*slideNav*/
+
+.slideNav{
+    margin-left:-30rem;
+    width: 24rem;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0.25turn, rgb(63, 135, 166, .7), rgb(235, 248, 225,.9), rgb(246, 157, 60,.7)),url("../images/slideMenu.jpg") no-repeat center /cover;
+}
+
+.slideNav ul{
+    padding: 0;
+}
+.slideNav ul li{
+    list-style: none;
+    padding: 0;
+}
+
+/*hide show slideNav*/
+input[type="checkbox"]{
+    display: none;
+    transition: transform 5s step-end;
+}
+
+input[type="checkbox"]:checked + div.slideNav{
+    transform:translate(30rem);
+}
+
+.slideNav ul.menu{
+    font-size:1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideNav ul.menu li{
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+ul.menu li:hover a{
+    color: olive;
+    text-shadow: 2px 2px 3px rgb(194, 182, 182);
+}
+
+div.businessName h1{
+    margin-top: 2rem;
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+}
+
+div.businessName ~p{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+}
+
+/*banner*/
+.banner{
+    height: 100vh;
+    background: linear-gradient(to right,rgba(12, 19, 34, 0.9),rgba(36, 59, 85,.1)), url("../images/banner/pexels-ron-lach-9155584.jpg") no-repeat center /cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h3{
+    font-family: 'Sacramento', cursive;
+    color:white;
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.banner button{
+    padding:1rem 1.5rem;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.6rem;
+    color: chocolate;
+    border:1px solid cornsilk;
+    text-transform: uppercase;
+}
+
+.banner button:hover{
+    box-shadow: 2px 2px 12px rgba(194, 191, 191,.8);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,.1);
+
+}
