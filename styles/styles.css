@@ -56,7 +56,7 @@ h1{
 .nav{
     background: linear-gradient(-45deg, rgba(223, 218, 218, 0.5),rgba(192, 185, 185, 0.2));
     position:fixed;
-    height: 100vh;
+    height: 100%;
     width:6rem;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(0.25turn, rgb(63, 135, 166, .7), rgb(235, 248, 225,.9), rgb(246, 157, 60,.7)),url("../images/slideMenu.jpg") no-repeat center /cover;
+    background: linear-gradient(0.25turn, rgb(63, 135, 166, .8), rgb(235, 248, 225,.9), rgb(63, 135, 166, .8)),url("../images/scented.jpg") no-repeat top left /cover;
 }
 
 .slideNav ul{
