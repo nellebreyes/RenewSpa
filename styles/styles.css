@@ -1,26 +1,44 @@
 /*css reset*/
-html,body{
+html{
   font-size: 62.5%; 
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
 }
 
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    width: 100%;
+}
+
 h1{
     margin: 0;
 }
+/*end of css reset*/
+
+.mainContainer{
+    display: relative;
+}
+.banner_nav{
+    display: flex;
+}
 
 /*nav*/
+
 .menuBars{
     width: 2rem;
     height:2rem;
     background: transparent;
-    margin-top: 1.9rem;
     cursor: pointer;
     transition: all 5s linear;
+    position: absolute;
+    top: 2rem;
+    margin-left: -4rem;
+    z-index: 200;
 }
-
-
 
 .line{
     width: 2rem;
@@ -54,14 +72,14 @@ h1{
     background: linear-gradient(50deg, rgba(248, 240, 240, 0.5),rgba(255, 254, 254,.8),rgba(248, 240, 240, 0.5));
 }
 .nav{
-    background: linear-gradient(-45deg, rgba(223, 218, 218, 0.5),rgba(192, 185, 185, 0.2));
-    position:fixed;
-    height: 100%;
+    background: linear-gradient(to right,rgba(12, 19, 34, 0.9),rgba(36, 59, 85,.9)), url("../images/banner/pexels-ron-lach-9155584.jpg") no-repeat;
+    position:sticky;
+    height: 100vh;
     width:6rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    z-index: 100;
 }
 
 .socialIcons{
@@ -73,11 +91,11 @@ h1{
 .socialIcons i.fa-brands{
     font-size: 3rem;
     padding-bottom: 1rem;
-
+    color:rgb(247, 247, 247);
 }
 
 .socialIcons i.fa-brands:hover{
-    color:rgb(247, 247, 247);
+    color:rgb(208, 194, 248);
     cursor: pointer;
 }
 
@@ -86,13 +104,11 @@ h1{
     font-size: 1.2rem;
 }
 
-/*slideNav*/
-
 .slideNav{
     margin-left:-30rem;
     width: 24rem;
     display: flex;
-    position: fixed;
+    position: sticky;
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
@@ -111,11 +127,22 @@ h1{
 /*hide show slideNav*/
 input[type="checkbox"]{
     display: none;
-    transition: transform 5s step-end;
 }
 
+
 input[type="checkbox"]:checked + div.slideNav{
-    transform:translate(30rem);
+    animation: slidenav 1s ease-in-out 0s 1 forwards;
+    
+}
+
+@keyframes slidenav {
+    0%{
+        margin-left:-30rem;
+    }
+    100%{
+        margin-left:0rem;
+    }
+    
 }
 
 .slideNav ul.menu{
@@ -161,6 +188,7 @@ div.businessName ~p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1 1 auto;
 }
 
 .banner h3{
@@ -185,5 +213,160 @@ div.businessName ~p{
     box-shadow: 2px 2px 12px rgba(194, 191, 191,.8);
     cursor: pointer;
     background-color: rgba(255, 255, 255,.1);
-
 }
+
+/*About Us*/
+
+.about{
+    display: flex;
+    margin: 8rem;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+}
+
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+}
+
+.about p{
+    padding-bottom: 3rem;
+}
+
+.aboutContent h3{
+    font-family: 'Roboto Serif', sans-serif;    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.aboutImages{
+    margin-top:8rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex: 1 1;
+    position:relative;
+}
+.aboutContent .shortUnderline{
+    border: 1px solid rgba(36, 59, 85,.9);
+    width: 18rem;
+    margin:0 auto;
+    margin-bottom: 1.8rem;
+}
+
+.aboutContent .longUnderline{
+    border: 1px solid rgba(36, 59, 85,.9);
+    width: 22rem;
+}
+
+.aboutImages img{
+    width:32rem;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(36, 59, 85,.5);
+    box-shadow: 3px 3px 10px rgba(36, 59, 85,.5);
+}
+
+.image4{
+    transform: translate(-20%,-90%);    
+}
+
+.image1{
+    transform: translate(-100%,-80%);
+    z-index: 100;   
+}
+.image2{
+    transform: translate(-70%,10%);  
+    z-index: 200;   
+}
+
+.image3{
+    transform: translate(20%,-10%);
+    z-index: 300;   
+}
+
+.about-btn{
+    padding: 1rem 2rem;
+    border-color:rgba(36, 59, 85,.5);
+    outline: none;
+    border-style: ridge;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+
+.about-btn:focus{
+    outline: none;
+}
+
+.fa-angle-double-right{
+    color:rgba(36, 59, 85,.8);
+    font-size: 1.5rem;
+}
+
+/*services*/
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h3{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.longUnderline{
+    margin-bottom: 2rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: center;
+    padding: 1rem;}
+
+.cards{
+    width: 50rem;
+    border-color:rgba(26, 42, 61, 0.9);
+    background: url("../images/scented.jpg") no-repeat top left /cover;
+    background-color: black;
+    box-shadow: 3px 3px 10px rgba(36, 59, 85,.5);
+    color:azure;
+    margin: 3rem;
+}
+
+.service-content{
+    padding:.5rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.service-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-content h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.services .shortUnderline{
+    border: 1px solid rgba(36, 59, 85,.9);
+    width: 18rem;
+    margin:0 auto;
+    margin-bottom: 1.8rem;
+}
+
+.services .longUnderline{
+    border: 1px solid rgba(36, 59, 85,.9);
+    width: 22rem;
+}
+
+
+
+

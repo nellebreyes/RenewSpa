@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Parisienne&family=Sacramento&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Serif:wght@200;300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <title>Renew Spa</title>
 </head>
 <body>
     <div class="mainContainer">
-        <nav class="nav">
-            
+        <!--banner and nav section-->
+        <section class="banner_nav">
+            <nav class="nav">
+                <div class="socialIcons">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-instagram-square"></i></div>
+                    <div><i class="fa-brands fa-google-plus-square"></i></div>
+                </div>
+                
+            </nav>
             <label for="menuCB">
                 <div class="menuBars">
-                        <div class="line line1"></div>
-                        <div class="line line2"></div>
-                        <div class="line line3"></div>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
                 </div> 
             </label>
             <input type="checkbox" id="menuCB">
@@ -33,27 +42,90 @@
                 </ul>
                 <p>Treat yourself, visit us!</p>
             </div>
-            <div class="socialIcons">
-                <div><i class="fa-brands fa-facebook"></i></div>
-                <div><i class="fa-brands fa-instagram-square"></i></div>
-                <div><i class="fa-brands fa-google-plus-square"></i></div>
+            <div class="banner">
+                <h3>Revive.Restore.Indulge</h3>
+                <button>View our Services</button>
             </div>
-            <div class="year">&copy;2022 </div>
-        </nav>
-        <div class="banner">
-            <h3>Revive.Restore.Indulge</h3>
-            <button>View our Services</button>
-        </div>
+        </section>
         <!--About Section-->
-        <div class="aboutPara">
-            <h3>About Us</h3>
-            <div class="underline"></div>
-            <div class="shortUnderline"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="aboutImages">
-            
-        </div>
+        <section class="about">
+            <div class="aboutContent">
+                <h3>About Us</h3>
+                <div class="underline">
+                    <div class="shortUnderline"></div>
+                    <div class="longUnderline"></div>
+                </div>
+                <h3>Renew Spa</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button class="about-btn">Read More <i class="fas fa-angle-double-right"></i> </button>
+                           
+            </div>
+            <div class="aboutImages">
+                <img class="images image1" src="images/about/facial.gif">
+                <img class="images image3" src="images/about/massage.gif">
+                <img class="images image2" src="images/about/facialmassage.gif">
+                <img class="images image4" src="images/about/yoga.gif">
+            </div>
+        </section>
+        <section class="services">
+            <h3>Our Services</h3>
+            <div class="underline">
+                <div class="shortUnderline"></div>
+                <div class="longUnderline"></div>
+            </div>
+            <div class="cards-container">
+                <div class="cards card1">
+                    <div class="service-img">
+                        <img src="images/services/physical-therapy.gif">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-heading">
+                            <h2>Physical Therapy</h2>
+                            <h2 class="service-price">$150</h2>
+                        </div>
+                    <span class="service-description"> Duis  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                    </div>
+                </div>
+                <div class="cards card2">
+                    <div class="service-img">
+                        <img src="images/services/rejuvinating-facial.gif">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-heading">
+                            <h2>Rejuvinating Facial</h2>
+                            <h2 class="service-price">$60</h2>
+                        </div>
+                    <span class="service-description"> Duis  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                    </div>
+                </div>
+                <div class="cards card3">
+                    <div class="service-img">
+                        <img src="images/services/full-body-massage.gif">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-heading">
+                            <h2>Massage</h2>
+                            <h2 class="service-price">starts at $50</h2>
+                        </div>
+                    <span class="service-description"> Duis  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                    </div>
+                </div>
+                <div class="cards card3">
+                    <div class="service-img">
+                        <img src="images/services/bubble-bath.gif" width="500px" height="333px">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-heading">
+                            <h2>Bubble Bath</h2>
+                            <h2 class="service-price">$50</h2>
+                        </div>
+                    <span class="service-description"> Duis  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!--end of About-->
         
     </div>
