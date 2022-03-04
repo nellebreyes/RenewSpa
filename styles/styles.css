@@ -223,12 +223,30 @@ div.businessName ~p{
 
 .about{
     display: flex;
-    margin: 8rem;
+    flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    margin-right: 0;
+    transition: all .5s;
+}
+
+.about-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h3{
+    font-size: 3rem;
+}
+
+.content-images{
+    transition: all .5s;
+    display: flex;
 }
 
 .aboutContent{
+    transition: all .5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,6 +256,9 @@ div.businessName ~p{
 
 .about p{
     padding-bottom: 3rem;
+    margin-right: 5rem;
+    flex: 1 1 50%;
+    padding-left: 6rem;
 }
 
 .aboutContent h3{
@@ -247,10 +268,8 @@ div.businessName ~p{
 
 .aboutImages{
     margin-top:8rem;
-    display: flex;
-    flex-direction: column;
     height: auto;
-    flex: 1 1;
+    flex: 1 1 40%;
     position:relative;
 }
 
@@ -270,7 +289,7 @@ div.businessName ~p{
 }
 
 .aboutImages img{
-    width:32rem;
+    width:28rem;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -420,7 +439,6 @@ section.footer{
     justify-content: space-around;
     padding: 7rem;
     padding-top: .5rem;
-    align-content: center;
     font-size: 2rem;
     padding-bottom: 1.5rem;
 }
@@ -473,6 +491,7 @@ section.footer{
 .contact-info form .input{
     display: flex;
     justify-content: center;
+    padding-right: 2rem;
 }
 
 .contact-info input[type="text"]{
@@ -499,8 +518,8 @@ section.footer{
 }
 
 .footer-gallery{
-    max-width: fit-content;
     display: flex;
+    width: 75%;
 }
 
 .footer-gallery img{
@@ -526,9 +545,130 @@ section.footer{
 .footer p{
     padding-top: 2.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
+/*media queries*/
 
+@media (max-width:1600px){
+    
+    /*footer section*/
+    .footer-2{
+        transition: all .5s;
+        padding:0 4rem;
+    }
+}
 
+@media (max-width:1500px){
+    
+    /*footer section*/
+    .footer-gallery{
+        transition: all .5s;
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
 
+    .footer p{
+        margin-bottom: 2rem;
+    }
+
+    .aboutImages img{
+        transition: all .5s;
+        width:25rem;
+    }
+}
+
+@media (max-width:1300px){
+    
+    /*about section*/
+      .aboutImages img{
+        transition: all .5s;
+        width:36%;
+    }
+}
+
+@media (max-width:1200px){
+
+    .aboutImages{
+        margin-top: 0;
+    }
+
+    .aboutImages img{
+        transition: all .5s;
+        width:34%;
+    }
+}
+
+@media (max-width:1100px){
+    .content-images{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .aboutContent{
+        display: flex;
+        margin-top: 20rem;
+    }
+
+    .aboutImages{
+        align-items: flex-start;
+        width:70%;
+        margin-top: 25rem;
+    }
+}
+
+@media (max-width:1000px){
+    
+    /*footer section*/
+    .footer-gallery{
+        transition: all .5s;
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+
+    .aboutContent{
+        margin-top: 18rem;
+        margin-bottom: 10rem;
+    }
+
+    .footer-2{
+        transition: all .5s;
+        padding:0 4rem;
+    }
+
+    .footer p{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:960px){
+
+    .aboutImages{
+        align-items: flex-start;
+        width:80%;
+        margin-top: 25rem;
+    }
+
+    /*footer section*/
+   .footer-gallery{
+    width: 75%;
+    padding-top: 3rem;
+   }
+
+   .footer p{
+       margin-bottom: 2rem;
+   }
+   
+}
+
+@media (min-width: 300px) and (max-width:800px){
+
+    .aboutImages{
+        align-items: flex-start;
+        width:90%;
+        margin-top: 20rem;
+    }
+}
 
